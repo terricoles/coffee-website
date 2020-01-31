@@ -1,0 +1,26 @@
+body{
+    font-family: 'Avenir', sans-serif;
+}
+
+h1 {
+    color: brown;
+    font-size: 100px;
+    font-family: 'Palatino', serif;
+}
+
+#second-header{
+    color: black;
+}
+
+p{
+    font-size: 14px;
+    width: 30%;
+}
+
+#hero-wrapper{
+    width: 600px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    margin-top: 10%;
+}
