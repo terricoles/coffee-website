@@ -3,13 +3,16 @@ body{
 }
 
 h1 {
-    color: brown;
+    color: black;
     font-size: 100px;
     font-family: 'Palatino', serif;
+    display: inline-block;
+
 }
 
 #second-header{
-    color: black;
+    color: white;
+    
 }
 
 p{
@@ -17,10 +20,30 @@ p{
     width: 30%;
 }
 
+#hero-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 #hero-wrapper{
     width: 600px;
-    margin-right: auto;
-    margin-left: auto;
     text-align: center;
-    margin-top: 10%;
+    z-index: 2;
+    position: relative;
+
+}
+
+#hero-beans{
+    background-image: url("img/beans.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 50%;
+    height: 600px;
+    z-index: 1;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+
 }
