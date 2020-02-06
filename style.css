@@ -32,6 +32,9 @@ p{
     z-index: 2;
     position: relative;
 
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #hero-beans{
