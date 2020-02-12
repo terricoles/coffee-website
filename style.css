@@ -7,17 +7,20 @@ h1 {
     font-size: 100px;
     font-family: 'Palatino', serif;
     display: inline-block;
+    margin-bottom: 0px;
 
 }
 
 #second-header{
     color: white;
+    padding-left: 20px;
     
 }
 
-p{
+#coffee-blurb{
     font-size: 14px;
-    width: 30%;
+    text-align: end;
+    width: 44%;
 }
 
 #hero-section{
@@ -34,6 +37,7 @@ p{
     text-align: center;
     z-index: 2;
     position: relative;
+    padding-left: 37px;
 }
 
 #hero-beans{
@@ -94,4 +98,40 @@ p{
 #menu-link {
     color: white;
     margin-left: 50px;
+}
+
+.standard-margin-section {
+    padding-top: 200px;
+    max-width: 960px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.columns-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.column-text-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+}
+
+.column {
+    max-width: 30%;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgray;
+}
+
+.middle {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.column-image {
+    width: 100%;
 }
