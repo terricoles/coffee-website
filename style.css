@@ -135,3 +135,53 @@ h1 {
 .column-image {
     width: 100%;
 }
+
+.coffee-desc {
+    padding-top: 200px;
+    max-width: 960px;
+    margin-right: auto;
+    margin-left: auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: minmax(340px, auto);
+    grid-gap: 20px;
+}
+
+esspreh3 {
+    padding-top: 25px;
+    padding-right: 25px;
+    padding-bottom: 25px;
+    padding-left: 25px;    
+    
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.esspre {
+    background-image: url("img/esspre.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    grid-column: 2/4;
+    grip-row: 1/2;
+}
+
+.cap {
+    background-image: url("img/cap.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    grid-column: 1/3;
+    grid-row: 2/3;
+}
+
+.caph3 {
+    padding-top: 25px;
+    padding-right: 25px;
+    padding-bottom: 25px;
+    padding-left: 25px;
+    
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
