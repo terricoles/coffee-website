@@ -4,21 +4,54 @@ body{
 
 h1 {
     color: #451F11;
-    font-size: 100px;
+    font-size: 6em;
     font-family: 'Palatino', serif;
     display: inline-block;
     margin-bottom: 0px;
 
 }
 
+#first-header{
+    animation-name: i-love;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+}
+
+@keyframes i-love {
+    0% {
+        opacity: 50%;
+        transform: translate(0px,-50px);
+    }
+    100% {
+        opacity: 100%;
+        transform: translate(0px,0px);
+    }
+}
+
 #second-header{
     color: white;
     padding-left: 20px;
     
+    animation-name: coffee;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+}
+
+@keyframes coffee {
+    0% {
+        opacity: 50%;
+        transform: translate(0px,50px);
+    }
+    100% {
+        opacity: 100%;
+        transform: translate(0px,0px);
+    }
 }
 
 #coffee-blurb{
-    font-size: 14px;
+    font-size: 1em;
     text-align: end;
     width: 44%;
 }
@@ -109,8 +142,7 @@ h1 {
 
 .columns-wrapper {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+    flex-wrap: wrap;
 }
 
 .column-text-wrapper {
@@ -121,7 +153,8 @@ h1 {
 }
 
 .column {
-    max-width: 30%;
+    width: 30%;
+    min-width: 200px;
     justify-content: center;
     align-items: center;
     background-color: lightgray;
@@ -130,6 +163,8 @@ h1 {
 .middle {
     margin-left: 20px;
     margin-right: 20px;
+    display: flex;
+    flex-direction: column;
 }
 
 .column-image {
@@ -148,7 +183,7 @@ h1 {
     grid-gap: 20px;
 }
 
-esspreh3 {
+.esspreh3 {
     padding-top: 25px;
     padding-right: 25px;
     padding-bottom: 25px;
@@ -164,7 +199,7 @@ esspreh3 {
     background-size: cover;
 
     grid-column: 2/4;
-    grip-row: 1/2;
+    grid-row: 1/2;
 }
 
 .cap {
@@ -184,4 +219,56 @@ esspreh3 {
     
     grid-column: 3/4;
     grid-row: 2/3;
+}
+
+@media screen and (max-width: 640px) {
+    #hero-section {
+        height: 100vh;
+    }
+    #hero-beans {
+        /*this needs to move below the white part and include coffee header and text blurb*/
+        height: 50vh;
+        width: 100vw;
+        bottom: 0px;
+        top: auto;
+    }
+    #first-header {
+        /*this needs to move above the second header*/
+    }
+    #second-header {
+        margin-top: 0px;
+    }
+    #coffee-blurb {
+        color: white;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #heading-wrapper {
+        padding-top: 6em;
+        flex-direction: column;
+    }
+    .middle {
+        flex-direction: column-reverse;
+    }
+    .coffee-desc {
+        grid-template-columns: 1fr;
+    }
+    .esspre {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    .esspreh3 {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    .cap {
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    .caph3 {
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+
 }
