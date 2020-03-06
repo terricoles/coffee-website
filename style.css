@@ -122,6 +122,10 @@ h1 {
     align-items: center;
 }
 
+.dropdown{
+    display: none;
+}
+
 #icon {
     height: 22px;
     width: 22px;
@@ -265,10 +269,43 @@ h1 {
     .cap {
         grid-column: 1/2;
         grid-row: 3/4;
+        height: 340px;
     }
     .caph3 {
         grid-column: 1/2;
         grid-row: 4/5;
+    }
+    #social-icons {
+        display: none;
+    }
+    #menu-words {
+        display: none;
+    }
+    #nav-bar {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        height: auto;
+        top: 15px;
+    }
+    .dropdown {
+        display: block;
+        padding: 25px;
+    }
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        margin-top: 30px;
+        right: 0px;
+        min-width: 160px;
+    }
+    .dropdown:hover .dropdown-content {
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: column;
+    }
+    a:link {
+        color: #451F11
     }
 
 }
